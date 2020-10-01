@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 interface ButtonCompType {
   set: () => void;
@@ -37,7 +37,6 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -46,15 +45,14 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
-
         <div>
           <ButtonComp
             text="Like"
             check={true}
             classButton={
-              checkLike === true ? "like-button liked" : "like-button"
+              checkLike === true ? 'like-button liked' : 'like-button'
             }
-            classSpan={checkLike === true ? "like-couter" : "like-couter"}
+            classSpan={checkLike === true ? 'like-couter' : 'like-couter'}
             dis={checkLike}
             value={like}
             set={() => {
@@ -71,11 +69,11 @@ const App: React.FC = () => {
             check={false}
             classButton={
               checkdislike === true
-                ? "dislike-button disliked"
-                : "dislike-button"
+                ? 'dislike-button disliked'
+                : 'dislike-button'
             }
             classSpan={
-              checkdislike === true ? "like-couter disliked" : "like-couter"
+              checkdislike === true ? 'like-couter disliked' : 'like-couter'
             }
             dis={checkLike}
             value={dislike}
